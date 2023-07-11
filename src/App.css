@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Jost:wght@400;500&family=Poppins:wght@200;500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+    height: 10vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.item {
+    margin: 0 2rem;
+    list-style: none;
+    font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    padding: 4px 15px;
+    border: 0px;
+    padding: .5rem 1.5rem;
+    background-color: rgba(208, 28, 40, 1);
+    color: white;
+}
+
+.main-container {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 70vw;
+    margin: 5rem auto;
+}
+
+.sub-container1 {
+    /* border: 1px solid green; */
+}
+
+.sub-container1>h1 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+.sub-container1>p {
+    width: 80%;
+    font-weight: 500;
+    color: rgb(87, 87, 87);
+    margin: 1rem 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.button-container>button {
+    width: auto;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.category {
+    background-color: #fff;
+    color: rgb(97, 97, 97);
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+.small-para {
+    font-size: 12px;
+}
+
+.shop-container {
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+}
+
+.shop-container>img {
+    width: 25px;
+    cursor: pointer;
 }
